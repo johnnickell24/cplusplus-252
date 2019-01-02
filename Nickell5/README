@@ -1,0 +1,56 @@
+// File:      <README>
+// Name:      <John Nickell>
+// Class:     CSIS 252
+// Program:   5
+// Date:      <10/10/18>
+
+Description:
+This program takes input from a user to get a max score along with an array of ints that act as grades. The program sorts and then outputs various pieces of information such as the array itself, the grade given, the average score, and the median score.
+
+Input/Output:
+All of the input is from the keyboard while the read function is going. It is formatted as ints with the max score being one int and the grades being ints inside of an array. The output is formatted into columns showing the score, percentage, and grades sorted largest to smallest. The second piece of output is a summary of inormation including the high/low score, the count, and the average and median score.
+
+Program Design:
+This program uses ints, chars, doubles, and strings. It uses for loops and while loops. It has functions calling other functions so it improves reuseability and makes it easier to read through.
+
+File List:
+
+file           function       description
+-----------------------------------------------
+main.cpp       main	      main function
+
+constants.h    declarations   declares constants
+
+read.cpp       reads input    puts input into the array
+
+sort.cpp       sorts array    sorts the array high to low
+
+outputScores.cpp prints scores calls printOrder after setting up format
+
+outputSummary.cpp prints summary-gives info on average etc
+
+average.cpp    average        calculates the average score
+
+median.cpp     median         calcualtes the median score
+
+printOrder.cpp prints scores  prints the score/percent/grade
+
+Makefile       makefile       the makefile
+
+README         README         the README
+
+Testing:
+I tested my program with a large amount of possible scores. Because this is based on the previous assignment I focused a lot of my testing on the areas I struggled with in Assignment 4. I tested every function with different scores and max scores as I migrated my maxScore out of being a global variable. I did a lot of testing with sets like 1, 60, 110, with a max score of 120 to test my columns that were off when the scores differed in size. I also made sure to test and look for any debugging messages I may have left in the code.
+
+Bugs:
+Since this is an upgrade to a previous assignment I knew that while migrating the program to multiple files with a Makefile, I would also need to fix the debugging message left in, the formatting of columns, and not use my maxScore as a global variable. I have fixed all of these previous errors and believe my program is working according to the specifications given.
+
+
+
+
+
+
+
+
+
+

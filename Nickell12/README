@@ -1,0 +1,38 @@
+// File:      <README>
+// Name:      <John Nickell>
+// Class:     CSIS 252
+// Program:   Assignment 12
+// Date:      <12/12/18>
+// This file contains the README
+
+Program Description:
+This program takes input from the keyboard that is a infix expression, transforms it to the postfix expression, and then evaluates it. It uses stacks, queues, and a token class to manipulate the input and get the correct output.
+
+Program Input/Output:
+The input is from the keyboard and from there sent into a queue. That queue is manipulated along with a stack to find the postfix expression and there is another queue and stack to evaluate the result from the postfix expression.
+
+Program Design:
+I designed the program with three main functions in mind that the main.cpp will call. I wanted one to get the input and put it into the first queue, the second function I wanted to convert the infix queue to a postfix expression within another queue. Lastly, I wanted to be able to evaluate the postfix and output the required infix, postfix, and result. I ended up outputting the infix in the first function so the latter two functions would have one less item to require when called. It was interesting creating the algorithms from the strict instructions given and just translating it into a coding format. 
+
+File Listing:
+
+main.cpp		main function				main
+makefile		compiles all of the files		creates the exe
+README			explanation of program			README
+infixToQueue.cpp        takes input to the queue                infixToQueue
+infixToPostfix.cpp      takes infix to the postfix              infixToPostfix
+evaluateOutput.cpp      evaluates postfix and outputs the postfix 
+token.o                 token class given by Dr. Brekke         token
+stackType.h             stack type given by Dr. Brekke          stackType
+queueType.h             queue type given by Dr. Brekke          queueType
+Token.h                 Token class given by Dr. Brekke         token type
+
+Program Testing:
+I tested the program with a variety of operands and operators, usually starting simple like 12+5*8 and adding newer operators and parenthesise as each test passed. This helped me a lot when I had things not getting the correct postfix and I could easily see which part of the input was causing the problem.
+
+Program Bugs:
+My infix and postfix are both working but my output is sometimes correct and sometimes partially off. It also is an int rather than a double so it misses the decimal portions for certain inputs as well.
+
+
+
+

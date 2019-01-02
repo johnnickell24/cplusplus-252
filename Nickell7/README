@@ -1,0 +1,32 @@
+// File:      <README>
+// Name:      <John Nickell>
+// Class:     CSIS 252
+// Program:   Assignment 7
+// Date:      <10/31/18>
+// This file contains the README
+
+Program Description:
+This assignment uses structs rather than object oriented programming to grab data from a file, maipulate it, and then place the manipulated data into a new file. The data for this assignment are employees and their information such as ID, wage, hours worked, and gross pay. Instead of finding these values using object oriented programming like we usually would, for this assignment we make an array of structs with our own worker type.
+
+Program Input/Output:
+The input in this assignment is from a data text file. It is formatted with one piece of information per line and the first number is the employee ID. It also needs an extra empty line at the bottom of the file. The output in this assignment puts values and information into a payroll text file. This is formatted with one employee per line.
+
+Program Design:
+This program utilizes structs of worker information rather than the array of scores in the previous assignment. Most of what is used is ints and doubles. The main algorithm used is the sort one, and it is a class example. Another algorithm would be my function that finds the gross wage.
+
+Functions:
+main.cpp - main function - the main function of the program
+makefile - make file - makes the program exe
+output.cpp - output function - outputs the information
+prototypes.h - prototypes of functions - gives prototypes
+read.cpp - read function - reads the information from a file
+payroll - where the info will be put
+sort.cpp - class example - sorts the information by score
+struct.h - has structs information
+data - file where info will be taken from
+
+Testing:
+I tested using a variety of name and different information combinations. I tried empID's that have leading zeroes as well as ones that don't, and gross pay that varies on having overtime or not.
+
+Bugs:
+The only bug in the program is that when writing to the file the first name is the only one printed.

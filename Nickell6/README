@@ -1,0 +1,33 @@
+// File:      <README>
+// Name:      <John Nickell>
+// Class:     CSIS 252
+// Program:   Assignment 6
+// Date:      <10/24/18>
+// This file contains the README
+Assignment Description:
+This assignment focuses on taking, manipulating, and then giving data back to files rather than the cin and cout we have been using before. This is shown with the use of test scores from one file and then finding various pieces of information about the scores such as the high/low value, the average, the letter grades, and more. Once we manipulate the data the program puts it into a testresults and testsummary blank text file.
+
+Assignment Input and Output:
+The input in this assignment is from a testscores text file. It is formatted with one number per line and the first number is the max score. It also needs an extra empty line at the bottom of the file. The output in this assignment puts values and information into a  testresults and testsummary text file. This is formatted with one piece of information per line.
+
+Program Design:
+This assignment uses the structures of int, double, string, and char. The char is only used in the letter grades and int and double are used more throughout. Algorithms used include some math equations such as the median, finding the average, and a class example for sorting arrays.
+
+Functions:
+main.cpp - main - main function
+constants.h - declarations - constants file
+read.cpp - read file - fills array with values form file
+output.cpp - outputs info - this will call the rest of the functions to output
+highLow.cpp - high and low value - this finds biggest and smallest value
+avg.cpp - average score - this finds the average score in array
+sort.cpp - class example sort - this sorts the array's values ascendingly
+median.cpp - median value - this finds the median value in the array
+printOrder.cpp - this outputs and prints the results to the test results file
+
+Testing Program:
+I tested the program with a variety of values for both the scores and the maximum score. I first tried a simple one with 10 as the max and then scores of 2, 4, 6, and 8. Next I tried having the max as 100 and had a variety of values for different grades such as 60, 75, 49, and 90.
+
+Bugs/Errors:
+I believe I finally fixed my set precision by putting it manually by all of the outputs I wanted to be set to two decimals rather than just the main one I have near the top of the output function. I've also fixed my formatting problems from previous assignments. Everything I've put into the program formats correctly in the tabular form so please let me know if my formatting is still somehow off and how I can test it further for the next assignment.
+
+The only thing that should be missing now is my program only runs correctly with the name being a first name only or one word. I tried to set up a get line so it would take the full name and the entire line but it kept on breaking the program.
